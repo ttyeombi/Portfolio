@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문화면</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header" class="inner">
+        <h1 class="logo"><a href="/">명랑핫도그 로고</a></h1>
+        <div class="set_addr">
+            <h2 class="tlt">핫도그</h2>
+        </div>
+        <div class="header_menu">
+            <a href="/cart/cart.html" class="btn_cart">장바구니</a>
+            <a class="btn_back" onclick="goBack();">뒤로가기 버튼</a>
+            <div class="header_menu_wrap">
+                <nav id="rnb" class="inner">
+                    <!-- class="navOpen" 시 네비게이션 보이도록 처리 -->
+        
+                    <!-- 로그인, 회원 영역 -->
+                    <div class="profile">
+                        <span class="profile_pic"></span>
+                        <div class="profile_txt_wrap">
+                            <p class="txt1">명랑핫도그의<br>다양한 <strong class="red">이벤트</strong>가 궁금하다면?</p>
+                            <a href="#" class="button_login"><span>로그인</span></a>
+                        </div>
+                    </div>
+        
+                    <!-- 퀵메뉴 영역 -->
+                    <div class="menu_list">
+                        <ul class="flex">
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">메뉴</a></li>
+                            <li><a href="#">E쿠폰 주문</a></li>
+                            <li><a href="#">이벤트&할인</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">명랑소식</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">창업안내</a></li>
+                            <li><a href="#">고객문의</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- 하단 버튼 -->
+                    <div class="header_btm_button_area inner">
+                        <ul class="flex">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="btn_menu">네비게이션 열기<span></span></button>
+            </div>
+        </div>
+
+    </header>
+    <!-- //header -->
+
+
+    <!-- wrap -->
+    <div id="menuDetail">
+        <h1 class="blind">주문 상세페이지</h1>
+
+        <!-- 상품정보 -->
+        <div class="menu_wrap inner_center">
+            <h2 class="menu_detail_tlt">몬스따 따블 핫도그</h2>
+            <p class="menu_desc">
+                따따블 치즈핫도그의 화려한 진화! 할라피뇨 소시지로 느끼함은 없애고 바삭 바삭 감자 토핑까지 한가득~ 맛도 크기도 몬스터!
+            </p>
+            <article class="menu_pic">
+                <div class="ico_new">NEW</div>
+            </article>
+            <ul class="keyword">
+                <li>몬스따</li>
+                <li>할라피뇨소시지</li>
+                <li>감자토핑</li>
+            </ul>
+        </div>
+
+        <!-- 주문상세 -->
+        <div class="section gap_border7 flex inner">
+            <h2 class="order_tlt">기본</h2>
+            <p class="order_cost"><strong class="red">2,900</strong>원</p>
+        </div>
+        <div class="section gap_border7 inner">
+            <h2 class="order_tlt">설탕 선택</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend class="blind">설탕 선택 옵션폼</legend>
+                    
+                    <div class="input_radio">
+                        <span class="ico_radio"></span>
+                        <input type="radio" name="sugar_option" value="sugar_y" id="sugar_y" checked="checked">
+                        <label for="sugar_y" class="flex">
+                            <span>설탕 뿌림 (O)</span>
+                            <span>+0원</span>
+                        </label>
+                    </div>
+                    <div class="input_radio">
+                        <span class="ico_radio"></span>
+                        <input type="radio" name="sugar_option" value="sugar_n" id="sugar_y">
+                        <label for="sugar_n" class="flex">
+                            <span>설탕 안 뿌림 (X)</span>
+                            <span>+0원</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="section inner">
+            <h2 class="order_tlt">핫도그 수량 선택</h2>
+            <div class="order_count">
+                <button class="minus">삭제</button>
+                <span class="count">1</span>
+                <button class="plus">추가</button>
+            </div>
+            <p class="count_guide">※ 핫도그 수량 변경 시 동일한 설탕 옵션이 적용됩니다.</p>
+        </div>
+
+    </div>
+
+    <div class="btm_fix">
+        <button type="button">
+            총 <span class="order_result_count">1</span>개 <span class="order_result_price"></span>원 담기
+        </button>
+    </div>
+
+    
+
+
+    
+
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
