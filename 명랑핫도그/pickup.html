@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문화면</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header" class="inner">
+        <h1 class="logo"><a href="/">명랑핫도그 로고</a></h1>
+        <div class="set_addr">
+            <h2 class="tlt"><a href="#" class="set_add">주소설정<span></span></a></h2>
+        </div>
+        <div class="header_menu">
+            <a href="/cart/cart.html" class="btn_cart">장바구니</a>
+            <a class="btn_back" onclick="goBack();">뒤로가기 버튼</a>
+            <div class="header_menu_wrap">
+                <nav id="rnb" class="inner">
+                    <!-- class="navOpen" 시 네비게이션 보이도록 처리 -->
+        
+                    <!-- 로그인, 회원 영역 -->
+                    <div class="profile">
+                        <span class="profile_pic"></span>
+                        <div class="profile_txt_wrap">
+                            <p class="txt1">명랑핫도그의<br>다양한 <strong class="red">이벤트</strong>가 궁금하다면?</p>
+                            <a href="./login.html" class="button_login"><span>로그인</span></a>
+                        </div>
+                    </div>
+        
+                    <!-- 퀵메뉴 영역 -->
+                    <div class="menu_list">
+                        <ul class="flex">
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">메뉴</a></li>
+                            <li><a href="#">E쿠폰 주문</a></li>
+                            <li><a href="#">이벤트&할인</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">명랑소식</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">창업안내</a></li>
+                            <li><a href="#">고객문의</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- 하단 버튼 -->
+                    <div class="header_btm_button_area inner">
+                        <ul class="flex">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="btn_menu">네비게이션 열기<span></span></button>
+            </div>
+        </div>
+
+    </header>
+    <!-- //header -->
+
+
+    <!-- wrap -->
+    <div id="pickUp">
+        <h1 class="blind">포장 - 매장찾기 페이지</h1>
+
+        <ul class="inner flex">
+            <li class="on"><a href="#">근처 매장 찾기</a></li>
+            <li><a href="#">지역/매장명 찾기</a></li>
+        </ul>
+        <!-- 찜내역 -->
+        <div class="section inner">
+            <section>
+                <p class="desc_search_result">검색결과 <span id="result_cnt"></span> 건</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="top">
+                                <h2 class="name">경기도산본점</h2>
+                            </div>
+                            <div class="info">
+                                <address class="t_desc">경기도 군포시 산본로 323번길 16-31 1층 108호(산본동,한솔프라자)</address>
+                                <p class="t_desc"></p>
+                                <p class="t_desc">매장 번호: <a href="">031-393-1988</a></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="top">
+                                <h2 class="name">고양원흥점</h2>
+                            </div>
+                            <div class="info">
+                                <address class="t_desc">경기 고양시 덕양구 도래울1로 55원흥동상가 1층 106호(도내동)</address>
+                                <p class="t_desc"></p>
+                                <p class="t_desc">매장 번호: <a href=""></a></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="top">
+                                <h2 class="name">고양행신점</h2>
+                            </div>
+                            <div class="info">
+                                <address class="t_desc">경기도 고양시 덕양구 중앙로558번길 16-161층 3호(행신동, 능곡종합프라자)</address>
+                                <p class="t_desc">평일 14:00 - 21:00, 주말 12:00 - 19:00</p>
+                                <p class="t_desc">매장 번호: <a href="">031-978-0399</a></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="top">
+                                <h2 class="name">원당점</h2>
+                            </div>
+                            <div class="info">
+                                <address class="t_desc">경기도 고양시 덕양구 호국로 789번길 31층 106호(주교동)</address>
+                                <p class="t_desc"></p>
+                                <p class="t_desc">매일 10:30 - 23:00</p>
+                                <p class="t_desc">매장 번호: <a href="">031-965-1995</a></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="top">
+                                <h2 class="name">일산라페스타점</h2>
+                            </div>
+                            <div class="info">
+                                <address class="t_desc">경기도 고양시 일산동구 무궁화로 32-121층(장항동, 일산라페스타E, 130-2)</address>
+                                <p class="t_desc"></p>
+                                <p class="t_desc">매장 번호: <a href="">031-902-0101</a></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="top">
+                                <h2 class="name">일산백마학원가점</h2> 
+                            </div>
+                            <div class="info">
+                                <address class="t_desc">경기도 고양시 일산동구 일산로 2021층 102호(마두동, 일성프라자)</address>
+                                <p class="t_desc">평일 11:30 - 22:00, 주말 10:30 - 22:00</p>
+                                <p class="t_desc">매장 번호: <a href="">031-907-4314</a></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </div>    
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

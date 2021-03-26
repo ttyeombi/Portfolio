@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명랑핫도그 - 핫도그</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header" class="inner">
+        <h1 class="logo"><a href="/">명랑핫도그 로고</a></h1>
+        <div class="set_addr">
+            <h2 class="tlt">메뉴</h2>
+        </div>
+        <div class="header_menu">
+            <a href="/cart/cart.html" class="btn_cart">장바구니</a>
+            <a class="btn_back" onclick="goBack();">뒤로가기 버튼</a>
+            <div class="header_menu_wrap">
+                <nav id="rnb" class="inner">
+                    <!-- class="navOpen" 시 네비게이션 보이도록 처리 -->
+        
+                    <!-- 로그인, 회원 영역 -->
+                    <div class="profile">
+                        <span class="profile_pic"></span>
+                        <div class="profile_txt_wrap">
+                            <p class="txt1">명랑핫도그의<br>다양한 <strong class="red">이벤트</strong>가 궁금하다면?</p>
+                            <a href="../login.html" class="button_login"><span>로그인</span></a>
+                        </div>
+                    </div>
+        
+                    <!-- 퀵메뉴 영역 -->
+                    <div class="menu_list">
+                        <ul class="flex">
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">메뉴</a></li>
+                            <li><a href="#">E쿠폰 주문</a></li>
+                            <li><a href="#">이벤트&할인</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">명랑소식</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">창업안내</a></li>
+                            <li><a href="#">고객문의</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- 하단 버튼 -->
+                    <div class="header_btm_button_area inner">
+                        <ul class="flex">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="btn_menu">네비게이션 열기<span></span></button>
+            </div>
+        </div>
+
+    </header>
+    <!-- //header -->
+
+    <!-- menu list -->
+    <div class="menulist">
+        <h1 class="blind">메뉴탭</h1>
+        <ul class="inner flex">
+            <li class="on"><a href="./hotdog.html">핫도그</a></li>
+            <li><a href="./sauce.html">소스</a></li>
+            <li><a href="./etc.html">기타</a></li>
+            <li><a href="./allergy.html">알레르기성분표</a></li>
+        </ul>
+    </div>
+
+    <!-- wrap -->
+    <div class="wrap_hotdog_list">
+        <ul>
+            <li>
+                <a href="../detail.html">
+                <h2 class="menu_tlt">몬스따 따블 핫도그</h2>
+                <p class="price"><strong class="red">2,900</strong>원</p>
+                <ul class="keyword">
+                    <li>몬스따</li>
+                    <li>할라피뇨소시지</li>
+                    <li>감자토핑</li>
+                </ul>
+                <span class="ico_new">NEW</span>
+                </a>
+            </li>
+            <li>
+                <a href="../detail.html">
+                    <h2 class="menu_tlt">휴게소 세트</h2>
+                    <p class="price"><strong class="red">12,000</strong>원</p>
+                    <ul class="keyword">
+                        <li>휴게소세트</li>
+                        <li>4가지 구성</li>
+                        <li>Combo</li>
+                        <li>Meal</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="../detail.html">
+                    <h2 class="menu_tlt">쫀달치즈볼</h2>
+                    <p class="price"><strong class="red">4,000</strong>원</p>
+                    <ul class="keyword">
+                        <li>치즈</li>
+                        <li>쫀득</li>
+                        <li>crispy</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="../detail.html">
+                    <h2 class="menu_tlt">불닭치즈소떡</h2>
+                    <p class="price"><strong class="red">2,500</strong>원</p>
+                    <ul class="keyword">
+                        <li>불닭소스</li>
+                        <li>소세지</li>
+                        <li>치즈떡</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="../detail.html">
+                    <h2 class="menu_tlt">양념감자튀김</h2>
+                    <p class="price"><strong class="red">2,000</strong>원</p>
+                    <ul class="keyword">
+                        <li>감자</li>
+                        <li>시즈닝</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="../detail.html">
+                    <h2 class="menu_tlt">따따블 핫도그</h2>
+                    <p class="price"><strong class="red">2,700</strong>원</p>
+                    <ul class="keyword">
+                        <li>따따블</li>
+                        <li>치즈</li>
+                        <li>crispy</li>
+                    </ul>
+                    <span class="ico_best">BEST</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- footer -->
+    <footer id="footer">
+        footer
+    </footer>
+    <!-- //footer -->
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

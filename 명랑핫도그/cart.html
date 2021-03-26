@@ -4,9 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>주문화면</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- header -->
+    <header id="header" class="inner">
+        <h1 class="logo"><a href="/">명랑핫도그 로고</a></h1>
+        <div class="set_addr">
+            <h2 class="tlt"><a href="#" class="set_add">주소설정<span></span></a></h2>
+        </div>
+        <div class="header_menu">
+            <a href="/cart/cart.html" class="btn_cart">장바구니</a>
+            <a class="btn_back" onclick="goBack();">뒤로가기 버튼</a>
+            <div class="header_menu_wrap">
+                <nav id="rnb" class="inner">
+                    <!-- class="navOpen" 시 네비게이션 보이도록 처리 -->
+        
+                    <!-- 로그인, 회원 영역 -->
+                    <div class="profile">
+                        <span class="profile_pic"></span>
+                        <div class="profile_txt_wrap">
+                            <p class="txt1">명랑핫도그의<br>다양한 <strong class="red">이벤트</strong>가 궁금하다면?</p>
+                            <a href="#" class="button_login"><span>로그인</span></a>
+                        </div>
+                    </div>
+        
+                    <!-- 퀵메뉴 영역 -->
+                    <div class="menu_list">
+                        <ul class="flex">
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">메뉴</a></li>
+                            <li><a href="#">E쿠폰 주문</a></li>
+                            <li><a href="#">이벤트&할인</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">명랑소식</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">창업안내</a></li>
+                            <li><a href="#">고객문의</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- 하단 버튼 -->
+                    <div class="header_btm_button_area inner">
+                        <ul class="flex">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="btn_menu">네비게이션 열기<span></span></button>
+            </div>
+        </div>
+
+    </header>
+    <!-- //header -->
+
+
+    <!-- wrap -->
+    <div id="cart">
+        <h1 class="blind">장바구니 페이지</h1>
+
+        <!-- 상단 고정 -->
+        <div class="menu_wrap inner_center gap_border7">
+            <p class="cart_desc">
+                회원가입 시 <strong class="red">명랑핫도그 쿠폰</strong> 발급!<br>
+                다양한 <strong class="red">이벤트</strong>와 <strong class="red">혜택</strong>을 놓치지 마세요!
+            </p>
+
+            <a href="./login.html" class="btn_shadow">로그인하기</a>
+        </div>
+
+        <!-- 찜내역 -->
+        <div class="section inner">
+            <h2 class="blind">장바구니 목록</h2>
+            <ul class="order_type flex">
+                <li class="on" data-tab="tab-1">
+                    <span>배달</span>
+                </li>
+                <li data-tab="tab-2">
+                    <span><a href="./pickup.html">포장</a></span>
+                </li>
+            </ul>
+            <div id="tab-1" class="cart on">
+                <ul class="order_list">
+                    <li class="flex">
+                        <article class="menu_pic"></article>
+                        <div class="order_txt">
+                            <h3 class="order_menu_tlt">몬스따 따블 핫도그 <strong class="red order_num">1</strong></h3>
+                            <p class="order_option">옵션: 설탕 안 뿌림 (X)</p>
+                            <p class="order_price"><strong class="red">2,900</strong>원</p>
+                        </div>
+                        <button class="btn_delete">장바구니 목록 삭제<span></span></button>
+                    </li>
+                    <li class="flex">
+                        <article class="menu_pic"></article>
+                        <div class="order_txt">
+                            <h3 class="order_menu_tlt">휴게소 세트 <strong class="red order_num">1</strong></h3>
+                            <p class="order_option">옵션: 소스 추가</p>
+                            <p class="order_price"><strong class="red">12,000</strong>원</p>
+                        </div>
+                        <button class="btn_delete">장바구니 목록 삭제<span></span></button>
+                    </li>
+                    <li class="flex">
+                        <article class="menu_pic"></article>
+                        <div class="order_txt">
+                            <h3 class="order_menu_tlt">쫀달치즈볼 <strong class="red order_num">3</strong></h3>
+                            <p class="order_option">옵션: -</p>
+                            <p class="order_price"><strong class="red">4,000</strong>원</p>
+                        </div>
+                        <button class="btn_delete">장바구니 목록 삭제<span></span></button>
+                    </li>
+                </ul>
+            </div>
+            <div id="tab-2" class="cart">
+                <ul class="tab_addr">
+                    <li>근처 매장 찾기</li>
+                    <li>지역/매장명 찾기</li>
+                </ul>
+                <p>검색결과 <span></span>건</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="btm_fix flex">
+        <a href="./menu/hotdog.html">+ 더 담기</a>
+        <button type="button" class="btn_buy">
+            총 <span class="order_result_count">1</span>개 <span class="order_result_price"></span>원 주문하기
+        </button>
+    </div>
+
     
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
